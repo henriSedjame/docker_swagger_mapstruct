@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring_boot_mongo_docker
+
+  data:
+    rest:
+      base-path: /catalog
+    mongodb:
+      host: ${MONGO_SERVICE_HOST:localhost}
+      port: ${MONGO_SERVICE_PORT:27017}
+      database: catalogdb
+
+server:
+  port: 8080
